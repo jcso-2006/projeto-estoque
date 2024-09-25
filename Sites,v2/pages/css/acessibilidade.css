@@ -1,0 +1,49 @@
+
+/* Conteudo PAG individual*/
+.select{
+  width: 400px;
+  height: 200px;
+  p{
+    margin-top: 10px;
+    margin-left: 10px;
+    font-size: 24px;
+    color: #f0f0f0;
+  }
+}
+
+/* Estilo do botão */
+.botao_olho {height: 50px;
+  margin-top: 20px;
+  margin-left: 30px;
+  background-color: #d9d9d9; /* Cor de fundo azul */
+  color: #FFFFFF; /* Cor do texto branco */
+  border: none;
+  border-radius: 60px;
+  cursor: pointer;
+  font-size: 16px;
+  width: 150px;
+  text-align: center;
+  .invisible{
+    margin-right: 65px;
+    width: 35px;
+    height:35px ;
+    background-color: #005a8c;
+    border-radius: 100%;
+  }
+  .visible{ 
+    
+    width:60px ;
+    height:60px ;
+  }
+}
+
+.more_info{
+  width:900px;
+  height: 500px;
+  margin-top: 10px;
+  margin-left: 50px;
+  p{
+    font-size: 24px;
+    color: #f0f0f0;
+  }
+}

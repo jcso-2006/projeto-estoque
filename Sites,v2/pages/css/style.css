@@ -1,0 +1,162 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  /* Tirar dps */
+  overflow-y: hidden;
+}
+
+/*header*/
+header .header {
+  background-color: #bfb8bd;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  flex: 1;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Conteudo cima */
+/* Logo */
+#logo {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  width: 150px;
+  height: auto;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+
+/* Busca em cima */
+#divBusca {
+  background-color: #f6f6f6;
+  width: 300px;
+  padding: 1px;
+  margin: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-left: 10%;
+  border-radius: 50px;
+}
+
+#txtBusca {
+  float: left;
+  background-color: transparent;
+  padding-left: 5px;
+  font-style: italic;
+  font-size: 18px;
+  border: none;
+  height: 32px;
+  width: 260px;
+  border-radius: 50px;
+}
+
+.search {
+  margin-right: 5px;
+  font-size: 30px;
+}
+
+/* 3 Icons na parte de cima */
+.icon-top {
+  width: 150px;
+  margin-left: auto;
+  margin-right: 20px;
+  display: flex;
+  font-size: 35px;
+  justify-content: space-around;
+}
+
+.boxin {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+}
+
+.icon {
+  color: #f6f6f6;
+}
+
+.boxin:hover {
+  background-color: #344459;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Main */
+main {
+  flex: 2;
+  height: 85vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-sidebar {
+  background-color: #344459;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.nav-sidebar li {
+  margin-top: 20px;
+}
+
+.nav-sidebar li:last-child {
+  position: absolute;
+  bottom: 0;
+  width: 18vw;
+}
+
+.button {
+  padding: 20px 5px;
+
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+a {
+  color: #f6f6f6;
+  letter-spacing: 2px;
+}
+
+a:hover{
+  color: #566f8f;
+}
+
+.button:hover {
+  background-color: #17181a;
+  cursor: pointer;
+  border-radius: 10px;
+}
+/*Totalmentee Provisorio */
+
+h2{
+  color: #000000;
+}
+
+/* Conteudo */
+.main-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.main-content {
+  width: 80%;
+  height: 100vh;
+  margin-top: 50px;
+  background-color: #566f8f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Conteudo PAG individual*/

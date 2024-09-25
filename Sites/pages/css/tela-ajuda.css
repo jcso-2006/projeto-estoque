@@ -1,0 +1,40 @@
+
+
+
+/* Conteudo PAG individual*/
+.box_blue{
+  background-color: #344459;
+  width: 95%;
+  height: 90%;
+  border-radius: 24px; 
+  margin-top: 10px;
+  margin-left: 2.5%; 
+  .texts{
+    width: 80%;
+    height: 300px;
+    font-size: 24px;
+    color: white;
+    padding-top: 20px;
+    margin-left: 20px;
+    .first_title{
+      margin-left: 60px;
+    }
+    .first_text{
+      margin-left: 350px;
+    }
+
+    .second_title{
+      margin-top: 70px;
+      margin-left: 100px;
+    }
+    
+    .second_text{
+      margin-left: 100px;
+      margin-left: 350px;
+    }
+
+  }
+
+
+}
+

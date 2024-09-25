@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/acessibilidade.css" />
+    <link rel="stylesheet" href="fontawesome-free-6.5.2-web/" />
+    <script
+      src="https://kit.fontawesome.com/a9a68e41bd.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header>
+      <div class="header">
+        <a href="index.html">
+          <div id="logo">
+           <h2>unolingo</h2>
+          </div>
+          </a>
+        <div id="divBusca">
+          <input type="text" id="txtBusca" placeholder="Buscar..." />
+          <i
+            class="fa-solid fa-magnifying-glass search"
+            style="color: #000000"
+          ></i>
+        </div>
+        <div class="icon-top">
+          <a href="">
+            <div class="boxin">
+              <i class="fa-solid fa-bell icon"></i>
+            </div>
+          </a>
+          <a href="ajuda.html">
+            <div class="boxin">
+              <i class="fa-regular fa-circle-question icon"></i>
+            </div>
+          </a>
+          <a href="user.html">
+            <div class="boxin">
+              <i class="fa-regular fa-user icon"></i>
+            </div>
+          </a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="main-container">
+        <!-- Inicio SideBar -->
+        <div class="sidebar">
+          <div class="nav-sidebar">
+            <ul class="nav">
+              <li class="button">
+                <a href="acessibilidade-arrumar.html">
+                  <i class="fa-solid fa-user-gear"  style="color: #f6f6f6"></i>
+                  Acessibilidade
+                </a>
+              </li>
+              <li class="button">
+                <a href="gerenciamento.html">
+                  <i class="fa-solid fa-universal-access" style="color: #f6f6f6;"></i>
+                  Gerenciamento de Conta
+                </a>
+              </li>
+              <li class="button" id ="backBtn" style="color: #f6f6f6; font-size: 25px;">
+                <i class="fa-solid fa-chevron-left" style="color: #f6f6f6"></i>
+                  Voltar
+              </li>
+            </ul>
+            <script>
+              document.getElementById("backBtn").addEventListener("click", function(){
+                history.back();
+              });
+            </script>
+          </div>
+        </div>
+        <!-- Final Sidebar -->
+        <!-- Inicio Conteudo -->
+        <div class="main-content">
+          <div class="select">
+            <p class="left">Modo Daltonismo (Experimental)</p>
+            <button class="botao_olho">
+              <img
+                class="invisible"
+                src="https://img.icons8.com/parakeet-line/48/invisible.png"
+                alt="invisible"
+              />
+              <img
+                class="visivel"
+                src="https://img.icons8.com/windows/32/visible--v1.png"
+                alt="visible--v1"
+              />
+            </button>
+          </div>
+          <div class="more_info">
+            <p>Como Funciona o modo daltonismo:</p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem
+              vel, velit praesentium itaque assumenda dolorum expedita
+              repudiandae repellat sequi dolore distinctio fugiat et aspernatur
+              tempore similique maxime esse ab molestias! Lorem ipsum dolor sit
+              amet consectetur, adipisicing elit. Facilis porro fuga iste,
+              necessitatibus quae commodi nisi expedita mollitia, natus minus
+              vel odit iusto alias quasi animi dolorum earum architecto.
+              Repellat.
+            </p>
+          </div>
+        </div>
+        <!-- Final conteudo -->
+      </div>
+    </main>
+    <footer>
+      <div></div>
+    </footer>
+  </body>
+</html>

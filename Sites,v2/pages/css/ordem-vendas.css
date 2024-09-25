@@ -1,0 +1,65 @@
+
+/* Conteudo PAG individual*/
+/* Ordem de Vendas */
+
+.parte-branca{
+  background-color: #d9d9d9;
+  width: 90%;
+  height: 80%;
+  border-radius: 7px;
+  overflow-y: scroll;
+}
+
+.parte-branca::-webkit-scrollbar {
+  width: 12px;    
+  height: 15px;
+}
+
+.parte-branca::-webkit-scrollbar-track {
+  background: #344459;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.parte-branca::-webkit-scrollbar-thumb {
+  background-color: #7696BF;
+  border-radius: 20px;
+  
+}
+
+
+.nomes{
+  display: flex;
+  justify-content: space-between;
+  margin:15px 30px 0;
+  
+}
+
+/* Parte de dentro */
+
+.box-inside{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.retangulo{
+  width: 96%;
+  height: 30px;
+  background-color: #7A8BA1;
+  margin: 6px;
+  display: flex;
+  flex-direction: row;
+}
+
+.ret_1{
+  border-right: 3px solid #626F7F;
+  height: 100%;
+  width: 20%;
+}
+
+.ret_2{
+border-right: 3px solid #626F7F;
+height: 100%;
+width: 60%;
+}

@@ -1,0 +1,84 @@
+
+/* Conteudo PAG individual*/
+/* TELA: GERENCIAMENTO DE CONTA */
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-gerenciamento{
+    width: 130vh;
+    height: 80vh;
+    background-color: #485E7A;
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 30px;
+}
+.titulo-gerenciamento{
+    width: 250px;
+    height: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    background-color: #D9D9D9;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin: 40px;
+}
+.h4-gerenciamento{
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f6f6f6;
+    margin-left: 50px;
+}
+.botao-autenticacao{
+    width: 30vh;
+    height: 10vh;
+    color: #f6f6f6;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.input-autenticacao{
+    width: 5vh;
+    height: 5vh;
+    margin: 5px;
+}
+.h6-gerenciamento{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #f6f6f6;
+    margin-left: 50px;
+    margin-top: 25px;
+}
+.contas-conectadas{
+    width: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 10px;
+}
+.img-gerenciamento{
+    width: 40px;
+    height: 40px;
+    margin: 5px;
+    border-radius: 30px;
+}
+.contas{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.nome-funcionario{
+    width: 100px;
+    font-size: 15px;
+    color: #f6f6f6;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

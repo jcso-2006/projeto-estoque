@@ -1,0 +1,284 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  /* Tirar dps */
+  overflow-y: hidden;
+}
+
+/*header*/
+header .header {
+  background-color: #bfb8bd;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  flex: 1;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Conteudo cima */
+/* Logo */
+#logo {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  width: 150px;
+  height: auto;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+
+/* Busca em cima */
+#divBusca {
+  background-color: #f6f6f6;
+  width: 300px;
+  padding: 1px;
+  margin: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-left: 10%;
+  border-radius: 50px;
+}
+
+#txtBusca {
+  float: left;
+  background-color: transparent;
+  padding-left: 5px;
+  font-style: italic;
+  font-size: 18px;
+  border: none;
+  height: 32px;
+  width: 260px;
+  border-radius: 50px;
+}
+
+.search {
+  margin-right: 5px;
+  font-size: 30px;
+}
+
+/* 3 Icons na parte de cima */
+.icon-top {
+  width: 150px;
+  margin-left: auto;
+  margin-right: 20px;
+  display: flex;
+  font-size: 35px;
+  justify-content: space-around;
+}
+
+.boxin {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+}
+
+.icon {
+  color: #f6f6f6;
+}
+
+.boxin:hover {
+  background-color: #344459;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Main */
+main {
+  flex: 2;
+  height: 85vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-sidebar {
+  background-color: #344459;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.nav-sidebar li {
+  margin-top: 20px;
+}
+
+.nav-sidebar li:last-child {
+  position: absolute;
+  bottom: 0;
+  width: 17.3vw;
+}
+
+.button {
+  padding: 20px 5px;
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+a {
+  color: #f6f6f6;
+  letter-spacing: 2px;
+}
+a:hover{
+  color: #566f8f;
+}
+
+.button:hover {
+  background-color: #17181a;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+/* Totalmente Provisorio */
+h2{
+  color: #000000;
+}
+
+
+
+
+/* Conteudo */
+.main-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.main-content {
+  width: 80%;
+  height: 100vh;
+  margin-top: 50px;
+  background-color: #566f8f;
+}
+/* Conteudo PAG individual*/
+/* Configuração Painel Principal */
+/* Configuração do Topo */
+.topo {
+  display: flex;
+  flex-direction: column;
+  height: 25%;
+}
+.box {
+  display: flex;
+  flex-direction: row;
+}
+/* Atividade de Vendas */
+.name {
+  font-size: 20px;
+  margin: 0 20px;
+  padding-top: 2px;
+}
+.atv-v {
+  display: flex;
+  flex-direction: row;
+  width: 60%;
+  height: 100%;
+}
+
+.info {
+  width: 180px;
+  height: 100px;
+  margin: 10px 15px;
+  background-color: #d9d9d9;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  border-radius: 15px;
+}
+
+.info h2 {
+  font-size: 32px;
+  padding-top: 30px;
+}
+
+.txt p {
+  height: 25px;
+  margin: 5px 20px 0 20px;
+  background-color: #566f8f;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #f6f6f6;
+}
+
+/* Resumo de Inventario */
+
+.resumo-i {
+  background-color: #d9d9d9;
+  width: 280px;
+  height: 100px;
+  margin-top: 10px;
+  margin-left: 125px;
+  border-radius: 15px;
+}
+
+.resumo-i h3 {
+  margin: 7px;
+}
+
+.rsm {
+  height: 20px;
+  width: 260px;
+  margin: 10px 0 0 10px;
+  background-color: #566f8f;
+  border-radius: 5px;
+}
+
+/* Baixo */
+.baixo {
+  background-color: #273444;
+  height: 70%;
+}
+
+/* Primeira linha */
+.linha1 {
+  display: flex;
+  flex-direction: row;
+  height: 35%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.dp {
+  background-color: #d9d9d9;
+  height: 140px;
+  width: 510px;
+  border-radius: 7px;
+}
+
+.ps {
+  background-color: #d9d9d9;
+  height: 140px;
+  width: 510px;
+  border-radius: 7px;
+}
+
+/* Segunda linha */
+
+.linha2 {
+  height: 62%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.itm {
+  width: 270px;
+  height: 250px;
+  background-color: #d9d9d9;
+  border-radius: 7px;
+}
+
+.odv {
+  width: 750px;
+  height: 250px;
+  background-color: #d9d9d9;
+  border-radius: 7px;
+}

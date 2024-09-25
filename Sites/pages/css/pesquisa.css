@@ -1,0 +1,125 @@
+
+/* Conteudo PAG individual*/
+/* Grupo de itens */
+.content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container-item{
+    width: 150vh;
+    height: 85vh;
+    background-color: #D9D9D9;
+    margin: 20px;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 12px;
+    overflow-y: scroll;
+}
+.container-item::-webkit-scrollbar {
+    width: 12px;    
+    height: 15px;
+}
+
+.container-item::-webkit-scrollbar-track {
+    background: #344459;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.container-item::-webkit-scrollbar-thumb {
+    background-color: #7696BF;
+    border-radius: 20px;
+    
+}
+
+#container-itens{
+    width: 480px;
+    height: 90%;
+    margin: 5px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+}
+.categoria{
+    width: 440px;
+    height: 203px;
+    background-color: #7A8BA1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+}
+.img-itens{
+    height: 100px;
+}
+p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: small;
+    color: #344459;
+    display: flex;
+    margin-bottom: 5px;
+}
+
+/* Páginas */
+.container-itens{
+    width: 150vh;
+    height: 80vh;
+    background-color: #344459;
+    border-radius: 20px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    overflow-y: scroll;
+}
+
+.container-itens::-webkit-scrollbar {
+    width: 12px;    
+    height: 15px;
+}
+
+.container-itens::-webkit-scrollbar-track {
+    background: #344459;
+    border-radius: 20px;
+    margin: 10px;
+}
+
+.container-itens::-webkit-scrollbar-thumb {
+    background-color: #7696BF;
+    border-radius: 20px;
+    
+}
+
+.box-itens{
+    height: 98%;
+    width: 95%;
+    margin: 5px;
+}
+
+.itens{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 15px;
+}
+
+.img-item{
+    width: 160px;
+    height: 170px;
+    border-radius: 20px;
+    margin: 5px;
+}
+
+.list-itens{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #F6F6F6;
+    margin: 10px;
+}
+
+li{
+    margin: 5px;
+}

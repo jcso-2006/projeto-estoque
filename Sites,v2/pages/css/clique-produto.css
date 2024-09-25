@@ -1,0 +1,80 @@
+
+  
+/* Conteudo PAG individual*/
+
+/* Fundo */
+.container-produto{
+    width: 150vh;
+    height: 80vh;
+    background-color: #344459;
+    border-radius: 10px;
+    
+}
+
+/* Box para organizar */
+.box-produto{
+    width: 97%;
+    margin: 30px;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* Produto e a tabela com as definições */
+#produto{
+    width: 100%;
+    height: 238px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.img-produto{
+    width: 255px;
+    height: 234px;
+    border-radius: 20px;
+    margin: 10px;
+    margin-left: 10px;
+    margin-top: 0;
+    border: 1px solid red;
+}
+
+.definicao-produto{
+    width: 90%;
+    margin-top: 10px;
+    height: 100px;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th{
+    border-bottom: 1px solid #FFFFFF;
+    width: 100px;
+    padding: 10px;
+}
+
+th, td {
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align: center;
+    color: #f2f2f2;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.th2, .th3, .th4, .th5, .th6, 
+.td2, .td3, .td4, .td5, .td6{
+    border-left: 1px solid #FFFFFF;
+}
+
+/* Descrição do produto */ 
+ .descricao-produto{
+    width: 500px;
+    color: #f2f2f2;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+
+}

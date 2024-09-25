@@ -1,0 +1,266 @@
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow-x: hidden;
+  /* Tirar dps */
+  overflow-y: hidden;
+}
+
+/*header*/
+header .header {
+  background-color: #bfb8bd;
+  width: 100%;
+  height: 50px;
+  position: fixed;
+  flex: 1;
+  align-items: center;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Conteudo cima */
+/* Logo */
+#logo {
+  background-color: #f6f6f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  width: 150px;
+  height: auto;
+  border-radius: 50px;
+  margin-left: 10px;
+}
+
+/* Busca em cima */
+#divBusca {
+  background-color: #f6f6f6;
+  width: 300px;
+  padding: 1px;
+  margin: 50px;
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  margin-left: 10%;
+  border-radius: 50px;
+}
+
+#txtBusca {
+  float: left;
+  background-color: transparent;
+  padding-left: 5px;
+  font-style: italic;
+  font-size: 18px;
+  border: none;
+  height: 32px;
+  width: 260px;
+  border-radius: 50px;
+}
+
+.search {
+  margin-right: 5px;
+  font-size: 30px;
+}
+
+/* 3 Icons na parte de cima */
+.icon-top {
+  width: 150px;
+  margin-left: auto;
+  margin-right: 20px;
+  display: flex;
+  font-size: 35px;
+  justify-content: space-around;
+}
+
+.boxin {
+  width: 50px;
+  padding: 5px;
+  text-align: center;
+}
+
+.icon {
+  color: #f6f6f6;
+}
+
+.boxin:hover {
+  background-color: #344459;
+  border-radius: 5px;
+  text-align: center;
+}
+
+/* Main */
+main {
+  flex: 2;
+  height: 85vh;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 20vw;
+  display: flex;
+  flex-direction: column;
+}
+
+.nav-sidebar {
+  background-color: #344459;
+  height: 100%;
+  margin-top: 50px;
+}
+
+.nav-sidebar li {
+  margin-top: 20px;
+}
+
+.nav-sidebar li:last-child {
+  position: absolute;
+  bottom: 0;
+  width: 18vw;
+}
+
+.button {
+  padding: 20px 5px;
+
+  margin-left: 40px;
+  font-size: 20px;
+}
+
+a {
+  color: #f6f6f6;
+  letter-spacing: 2px;
+}
+
+.button:hover {
+  background-color: #17181a;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+a:hover {
+  color: #566f8f;
+}
+
+/* Conteudo */
+.main-container {
+  display: flex;
+  justify-content: flex-start;
+}
+.main-content {
+  width: 80%;
+  height: 100vh;
+  margin-top: 50px;
+  background-color: #566f8f;
+  display: flex;
+  align-items: center;
+}
+
+/* Conteudo PAG individual*/
+.perfil {
+  background-color: aliceblue;
+  width: 55vw;
+  height: 120vh;
+  margin-left: 80px;
+  color: #FFFFFF;
+}
+.imagens-perfil-banner {
+  background-color: #C4C4C4;
+  height: 30%;
+  width: auto; 
+}
+
+
+.img-user-top{
+  background-color: #17181a;
+  height: 150px;
+  width: 150px;
+  margin-top: -70px;
+  border-radius: 50%;
+}
+/* .nome{
+  padding-left: 50px;
+  padding-top: 10px;
+  padding-bottom: 5px;
+  
+} */
+#img-user-tudo{
+  display: flex;
+}
+#img-user-tudo h3{
+  padding:20px;
+}
+.funcionario{
+  background-color: #344459;
+  height: 70%;
+  width: 100%;
+  padding-left: 50px;
+}
+.adm{
+  padding-top: 60px;
+}
+.adm :first-child{
+  padding-bottom: 10px;
+}
+/* Styles for the contacts section */
+
+.contatos {
+  position: absolute;
+  top: 50px;
+  right: 20px;
+  height: 300px;
+  width: 300px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background-color: #8d8d8d;
+  display: flex;
+  flex-direction: column;
+}
+#c-todos{
+  width: 100%;
+  height: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 10px;
+  color: #D9D9D9;
+}
+.caixa-dentro {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+  height: 75%;
+  background-color: #D9D9D9;
+  overflow-y: scroll;
+}
+
+.caixa-dentro::-webkit-scrollbar {
+  width: 12px;    
+  height: 15px;
+}
+
+.caixa-dentro::-webkit-scrollbar-track {
+  background: #344459;
+  border-radius: 20px;
+  margin: 10px;
+}
+
+.caixa-dentro::-webkit-scrollbar-thumb {
+  background-color: #7696BF;
+  border-radius: 20px;
+  
+}
+
+.foto {
+  float: left;
+  border: transparent thin solid;
+  padding: 5px;
+  margin: 0px 10px 10px 0;
+  max-width: 186px;
+  height: 50px;
+  width: 50px;
+  border-radius: 30px;
+  border: #17181a solid;
+  margin: 5px 8px;
+}
+
+.name{
+  margin: 10px 40px;
+  font-weight: bold;
+}
