@@ -1,56 +1,44 @@
 <?php
-if($_SERVER["RESQUEST_METHOD"] == "POST"){
-
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $servername = "localhost";
     $username = "root";
     $password = "";
-    $dbname = "teste";
+    $dbname = "estoque";
 
-    // Estabele a conexão com o banco de dados
     $conn = new mysqli($servername, $username, $password, $dbname);
 
-    if($conn->connect_errno){
-        die("Erro na conexão com o banco de dados:". $conn->connect_errno);
+    if ($conn->connect_error) {
+        die("Erro na conexão com o banco de dados: " . $conn->connect_error);
     }
-    
-    $user = $_POST["user"];
-    $email = $_POST["email"];
-    $pass = $_POST["password"];
 
+    $email = trim($_POST["email"]); // Remove espaços extras
+    $pass = trim($_POST["pass"]);
 
-    $sql = "SELECT pass FROM usuarios WHERE email = '$email' and nome = '$user'";
-    $result = $conn->query($sql);
+    // Usa prepared statements para maior segurança
+    $stmt = $conn->prepare("SELECT id_estoquista, email, senha FROM estoquistas WHERE email = ?");
+    $stmt->bind_param("s", $email);
+    $stmt->execute();
+    $result = $stmt->get_result();
 
     if ($result->num_rows > 0) {
-        // Obtém o hash da senha do banco de dados
-        $row = $result->fetch_assoc();
-        $pass_hash = $row["pass"];
+        $user = $result->fetch_assoc();
+        $pass_hash = $user["senha"];
 
-        // Verifica se a senha fornecida pelo usuário corresponde ao hash armazenado
         if (password_verify($pass, $pass_hash)) {
-            // Senha correta, redireciona para a página de sucesso
-            $sql = "SELECT id,firstname,lastname,email,birthdate,gender FROM usuarios WHERE email = '$email'";
-            $result = $conn->query($sql);
-            $user = $result->fetch_assoc();
-
+            session_start();
+            $_SESSION['user_id'] = $user['id_estoquista'];
+            $_SESSION['user_email'] = $user['email'];
+            header("Location: account_created.html");
             exit();
         } else {
-            // Senha incorreta, redireciona para a página de erro
-            header("Location: erro.html");
+            header("Location: erro1.html");
             exit();
         }
     } else {
-        // Usuário não encontrado, redireciona para a página de erro
-        header("Location: erro.html");
+        header("Location: erro2.html");
         exit();
     }
 
-    // Fecha a conexão com o banco de dados
     $conn->close();
-
-
-
-
-
 }
 ?>
