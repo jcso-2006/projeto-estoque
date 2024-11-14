@@ -8,6 +8,7 @@
     <title>Cadastro</title>
   </head>
   <body>
+    <form action="php/cadastro.php" method="post">
     <div class="div-total">
       <div class="botao-login">
         <a href="login.html">
@@ -18,14 +19,14 @@
         <h2>Cadastro</h2>
         <div class="formulario">
           <div class="funcionario">
-            <input type="text" placeholder="Nome do funcionário" />
+            <input type="text" placeholder="Nome do funcionário" id="name" name="name"/>
           </div>
           <div class="email">
-            <input type="email" placeholder="Coloque seu email" />
+            <input type="email" placeholder="Coloque seu email"  id="email" name="email"/>
           </div>
           <div class="senha">
-            <input type="password" placeholder="Coleque uma senha" />
-            <input type="password" placeholder="Confirme a senha" />
+            <input type="password" placeholder="Coleque uma senha" id="pass" name="pass"/>
+            <input type="password" placeholder="Confirme a senha" id="con_pass" name="con_pass"/>
           </div>
           <button>Enviar</button>
         </div>
@@ -36,5 +37,6 @@
             </div>
         </div> -->
     </div>
+    </form>
   </body>
 </html>

@@ -1,3 +1,47 @@
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "estoque";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Falha na conexão: " . $conn->connect_error);
+}
+
+
+
+$stmt = $conn->prepare("
+    SELECT p.nome AS produto_nome, pd.id_produto, pd.local_entrega
+    FROM produto p
+    INNER JOIN pedidos pd ON p.id_produto = pd.id_produto");
+$stmt->execute();
+$result = $stmt->get_result();
+
+  // if ($result->num_rows > 0) {
+  //     while ($row = $result->fetch_assoc()) {
+  //         echo "<div class='itens'>";
+  //         echo "<ul class='list-itens'>";
+  //         // Usando 'p' para a tabela 'produto' e 'pd' para a tabela 'pedido'
+  //         echo "<li>ID Produto: " . htmlspecialchars($row['id_produto']) . "</li>";
+  //         echo "<li>Nome: " . htmlspecialchars($row['nome']) . "</li>";
+  //         echo "<li>Endereço: " . htmlspecialchars($row['endereco']) . "</li>";
+  //         echo "</ul></div>";
+  //     }
+  // } else {
+  //     echo "<p>Nenhum produto encontrado.</p>";
+  // }
+
+  
+
+    $stmt->close();
+
+
+$conn->close();
+?>
+
+
 <!DOCTYPE html>
 <html lang="pt-br">
   <head>
@@ -5,13 +49,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
-    <link rel="stylesheet" href="css/clique-produto.css" />
+    <link rel="stylesheet" href="css/ordem-vendas.css" />
     <link rel="stylesheet" href="fontawesome-free-6.5.2-web/" />
     <script
       src="https://kit.fontawesome.com/a9a68e41bd.js"
       crossorigin="anonymous"
     ></script>
-    <title>Produto</title>
   </head>
   <body>
     <header>
@@ -97,55 +140,45 @@
         <!-- Final Sidebar -->
         <!-- Inicio Conteudo -->
         <div class="main-content">
-          <!-- Container (fundo) -->
-          <div class="container-produto">
-            <div class="box-produto">
-              <!-- Imagem com as definições do produto -->
-              <div id="produto">
-                <img
-                  class="img-produto"
-                  src="/img/colherPau.png"
-                  alt="Colher de pau"
-                />
-                <!-- Tabela com as definições do produto -->
+          <div class="parte-branca">
+            <div class="nomes">
+              <div><b>ID produtos</b></div>
+              <div><b>Itens</b></div>
+              <div><b>Endereço</b></div>
+            </div>
+            <div class="box-inside"><?php
+            if ($result->num_rows > 0) {
+              while ($row = $result->fetch_assoc()) {
+                echo "<div class='retangulo'>"; // Início do container principal
 
-                <div class="definicao-produto">
-                  <table>
-                    <tr>
-                      <th class="th1">ID</th>
-                      <th class="th2">Marca</th>
-                      <th class="th3">Preço</th>
-                      <th class="th4">Nome</th>
-                      <th class="th5">Material</th>
-                      <th class="th6">Quantidade</th>
-                    </tr>
-                    <tr>
-                      <td class="td1">108</td>
-                      <td class="td2">Xing Bambu</td>
-                      <td class="td3">R$20,00</td>
-                      <td class="td4">Colher</td>
-                      <td class="td5">Madeira</td>
-                      <td class="td6">1</td>
-                    </tr>
-                  </table>
-                </div>
-              </div>
-
-              <!-- Descrição do produto -->
-              <div class="descricao-produto">
-                <h3>Descrição</h3>
-                <p>
-                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                  Labore iusto atque dolorum eaque delectus culpa sapiente
-                  quisquam officiis beatae tempora odio omnis hic, porro
-                  aspernatur rem deleniti vero est asperiores!
-                </p>
-              </div>
+                // Div 1: Exibe o nome do produto
+                echo "<div class='ret_1'>";
+                echo "<p>" . htmlspecialchars($row['id_produto']) . "</p>"; // Usando a chave correta 'produto_nome'
+                echo "</div>";
+        
+                // Div 2: Exibe o endereço de entrega
+                echo "<div class='ret_2'>";
+                echo "<p> " . htmlspecialchars($row['produto_nome']) . "</p>"; // Chave 'local_entrega' já está correta
+                echo "</div>";
+        
+                // Div 3: Exibe o ID do produto
+                echo "<div class='ret_3'>";
+                echo "<p>" . htmlspecialchars($row['local_entrega']) . "</p>"; // Chave 'id_produto' já está correta
+                echo "</div>";
+        
+                echo "</div>"; // Fim do container principal
+                }
+            }
+                        
+?>          
             </div>
           </div>
         </div>
         <!-- Final conteudo -->
       </div>
     </main>
+    <footer>
+      <div></div>
+    </footer>
   </body>
 </html>

@@ -18,7 +18,7 @@
             </div>
             <div id="divBusca">
                 <form action="texte.php" method="post">
-                    <input type="text" id="txtBusca" name="produto" placeholder="Buscar..."/>
+                    <input type="text" id="txtBusca"  placeholder="Buscar..."/>
                     <button type="submit" style="display:none;"></button>
                     <i class="fa-solid fa-magnifying-glass search" style="color: #000000;"></i>
                 </form>
@@ -35,11 +35,11 @@
             <div class="sidebar">
                 <div class="nav-sidebar">
                     <ul>
-                        <li class="button"><i class="fa-solid fa-house" style="color: #f6f6f6"></i><a href="#">Painel Principal</a></li>
-                        <li class="button"><i class="fa-regular fa-user" style="color: #f6f6f6"></i><a href="#">Contato</a></li>
-                        <li class="button"><i class="fa-solid fa-basket-shopping" style="color: #f6f6f6"></i><a href="#">Grupo de Itens</a></li>
-                        <li class="button"><i class="fa-solid fa-cart-shopping" style="color: #f6f6f6"></i><a href="#">Ordem de Vendas</a></li>
-                        <li class="button"><div class="config"><i class="fa-solid fa-gear" style="color: #f6f6f6"></i><a href="#">Configuração</a></div></li>
+                        <li class="button"><i class="fa-solid fa-house" style="color: #f6f6f6"></i><a href="../principal.php">Painel Principal</a></li>
+                        <li class="button"><i class="fa-regular fa-user" style="color: #f6f6f6"></i><a href="../contato.html">Contato</a></li>
+                        <li class="button"><i class="fa-solid fa-basket-shopping" style="color: #f6f6f6"></i><a href="categoria.php">Grupo de Itens</a></li>
+                        <li class="button"><i class="fa-solid fa-cart-shopping" style="color: #f6f6f6"></i><a href="ordens_vendas.html">Ordem de Vendas</a></li>
+                        <li class="button"><div class="config"><i class="fa-solid fa-gear" style="color: #f6f6f6"></i><a href="gerenciamento.html">Configuração</a></div></li>
                     </ul>
                 </div>
             </div>

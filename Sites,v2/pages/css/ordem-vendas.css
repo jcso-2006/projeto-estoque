@@ -63,3 +63,12 @@ border-right: 3px solid #626F7F;
 height: 100%;
 width: 60%;
 }
+.ret_3{
+  border-right: 3px solid #626F7F;
+  height: 100%;
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  }
+
