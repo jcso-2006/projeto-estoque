@@ -149,7 +149,9 @@ h2{
 .main-container {
   display: flex;
   justify-content: flex-start;
+
 }
+
 .main-content {
   width: 80%;
   height: 100vh;
@@ -164,6 +166,8 @@ h2{
   flex-direction: column;
   height: 25%;
 }
+
+
 .box {
   display: flex;
   flex-direction: row;

@@ -43,7 +43,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             $_SESSION['user_genero'] = $user['genero'];
             $_SESSION['user_nome'] = $user['nome'];
             $_SESSION['user_idade'] = $user['idade'];
-            header("Location: ../principal.php");
+            header("Location: ../principal.html");
             exit();
         } else {
             // Senha incorreta, redireciona para a página de erro

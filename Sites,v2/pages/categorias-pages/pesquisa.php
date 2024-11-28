@@ -35,11 +35,11 @@
             <div class="sidebar">
                 <div class="nav-sidebar">
                     <ul>
-                        <li class="button"><i class="fa-solid fa-house" style="color: #f6f6f6"></i><a href="../principal.php">Painel Principal</a></li>
+                        <li class="button"><i class="fa-solid fa-house" style="color: #f6f6f6"></i><a href="../principal.html">Painel Principal</a></li>
                         <li class="button"><i class="fa-regular fa-user" style="color: #f6f6f6"></i><a href="../contato.html">Contato</a></li>
-                        <li class="button"><i class="fa-solid fa-basket-shopping" style="color: #f6f6f6"></i><a href="categoria.php">Grupo de Itens</a></li>
-                        <li class="button"><i class="fa-solid fa-cart-shopping" style="color: #f6f6f6"></i><a href="ordens_vendas.html">Ordem de Vendas</a></li>
-                        <li class="button"><div class="config"><i class="fa-solid fa-gear" style="color: #f6f6f6"></i><a href="gerenciamento.html">Configuração</a></div></li>
+                        <li class="button"><i class="fa-solid fa-basket-shopping" style="color: #f6f6f6"></i><a href="../categoria.html">Grupo de Itens</a></li>
+                        <li class="button"><i class="fa-solid fa-cart-shopping" style="color: #f6f6f6"></i><a href="../ordens_vendas.php">Ordem de Vendas</a></li>
+                        <li class="button"><div class="config"><i class="fa-solid fa-gear" style="color: #f6f6f6"></i><a href="../gerenciamento.html">Configuração</a></div></li>
                     </ul>
                 </div>
             </div>
@@ -97,7 +97,7 @@ $conn->close();
     </main>
     <footer>
         <div>
-            <p>&copy; 2024 Unolingo. Todos os direitos reservados.</p>
+            
         </div>
     </footer>
 </body>

@@ -65,7 +65,7 @@ $conn->close();
           </div>
           </a>
         <div id="divBusca">
-          <form action="categorias-pages/texte.php" method="post">
+          <form action="categorias-pages/pesquisa.php" method="post">
             <input type="text" id="txtBusca" placeholder="Buscar..." name="produto" />
             <i
               class="fa-solid fa-magnifying-glass search"
@@ -99,7 +99,7 @@ $conn->close();
           <div class="nav-sidebar">
             <ul class="nav">
               <li class="button">
-                <a href="index.html">
+              <a href="principal.html">
                   <i class="fa-solid fa-house" style="color: #f6f6f6"></i>
                   Painel Principal
                 </a>
